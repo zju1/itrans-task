@@ -11,12 +11,12 @@ import {
   RadioWrapper,
 } from "./radio.styled";
 
-export type InputProps = {
+export type RadioProps = {
   label: string;
   options: { value: string; label: string }[];
 } & UseControllerProps<FieldValues, any>;
 
-export function Radio(props: InputProps) {
+export function Radio(props: RadioProps) {
   const { name, control, defaultValue, rules, shouldUnregister } = props;
 
   const { field, fieldState } = useController({
